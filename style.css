@@ -1,0 +1,113 @@
+@import <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet"> 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #2F3233;
+    font-family: 'Asap', sans-serif;
+}
+
+header{
+    background: white;
+    /* top right bottom left (clockwise) */
+    margin:-40px -10px 10px -10px;
+}
+
+
+
+header > h1{
+    color: #2F3233;
+    text-align: center;
+    /* this means top & bottom margin is 20px and left and right its auto.*/
+    font-size: 60px;
+}
+
+.score-board{
+    border: 3px solid white;
+    border-radius: 4px;
+    margin: 2px auto;
+    text-align: center;
+    width:200px;
+    color: white; 
+    font-size: 46px;
+    /* 15px top and bottom and 20px left and right.*/
+    padding: 15px, 20px;
+    position: relative;
+}
+
+.badge{
+    background: #ff1a1a;
+    font-size: 15px;
+    padding: 20px,10px;
+    width: 50px;
+}
+
+#user{
+    position:absolute;
+    left: -25px;
+    top: 20px;
+}
+
+#comp{
+    position: absolute;
+    top: 20px; 
+    right: -30px;
+}
+
+.result-statement{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.choices{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.choice{
+    /* for displaying the images in line i.e. horisontal*/
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* for time delay in changing the color on hovering defined in .choice:hover below*/
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: #3a3b3d;
+}
+
+.bottom{
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.green{
+    border: 4px solid green;
+    box-shadow: 0 0 10px #008000;
+
+}
+
+.red{
+    border: 4px solid red;
+    box-shadow: 0 0 10px #cc0000;
+}
+
+.gray{
+    border: 4px solid #141f1f;
+    box-shadow: 0 0 10px #0a1010;
+}

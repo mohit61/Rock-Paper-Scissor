@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+    <header><h1>Rock Paper Scissor</h1></header>
+    <div class="score-board">
+        <!--span se element in-line ho jate hai i.e. horizontal.-->
+        <div class="badge" id="user">user</div>
+        <span class="user-score">0</span>:<span class="comp-score">0</span>
+        <div class="badge" id="comp">comp</div>
+    </div>
+    <div class="result-statement">
+        <p>Paper covers rock. You win!</p>
+    </div>
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="images/rock--left.png" alt="r" width="120px">
+        </div>
+        <div class="choice" id="p">
+            <img src="images/paper--left.png" alt="p" width="120px">
+        </div>
+        <div class="choice" id="s">
+            <img src="images/scissors--left.png" alt="s" width="120px">
+        </div>      
+    </div>
+    <div class="bottom">Make your move.</div>
+    <!--attaching javascript file-->
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
